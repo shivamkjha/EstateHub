@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    letter-spacing: .09em;
+    font-weight: 520;
+    text-rendering: optimizespeed;
+    font-family: FreeSans,Arimo,"Droid Sans",Helvetica,Arial,sans-serif;
+    /* padding: 20px; */
+    height: 40px;
+}
+
+.navbar {
+    display: flex;
+    padding: 0px 20px 0px 20px;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: capitalize;
+    color: black;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.navbar a {
+    text-decoration: none;
+}
+
+.navbar-right, .navbar-left{
+    display: flex;
+    align-items: center;
+}
+
+.items {
+    padding:0px 15px 0px 15px;
+    cursor: pointer;
+}
+
+.items:hover {
+    color: rgb(0, 106, 255);
+}
+
+.logo {
+    width: 3rem;
+    height: 3.315rem;
+}
