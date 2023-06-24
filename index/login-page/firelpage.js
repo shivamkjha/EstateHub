@@ -28,6 +28,7 @@ const firebaseConfig = {
     firebase.auth().signInWithEmailAndPassword(email, password)
       .then((userCredential) => {
         // Redirect to the home page if authorized
+        alert("Logged in Successfuly")
         window.location.href = 'index/index.html';
       })
       .catch((error) => {
