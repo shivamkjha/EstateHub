@@ -96,7 +96,7 @@ body {
   
   .button button {
     text-align: center;
-    width: 95%;
+    width: 100%;
   }
   
   .button button[type="submit"] {
