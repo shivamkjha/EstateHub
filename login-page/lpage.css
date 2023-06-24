@@ -128,22 +128,22 @@ a:hover {
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 
-/* li.google {
+li.google {
   margin-right: 10px;
 }
 
 li.google a::before {
-  background-image: url("google.png");
-} */
+  background-image: url("asset/google.png");
+}
 
-/* li.fb {
+ li.fb {
   margin-left: 10px;
 }
 
 li.fb a::before {
   margin: 0;
-  background-image: url("fb.png");
-} */
+  background-image: url("asset/fb.png");
+}
 
 @media only screen and (max-width: 400px) {
   .social-login ul {
