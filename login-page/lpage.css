@@ -44,7 +44,7 @@ a:hover {
 
 .form-container {
   max-width: 450px;
-  margin-top: 10%;
+  margin-top: 2%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -187,18 +187,18 @@ li.fb a::before {
   border-radius: 3px;
   margin-bottom: 15px;
   transition: background .3s;
-  color: #ffff;
+  color: black;
 }
 
 .the-form [type="_email"]::placeholder,
 .the-form [type="password"]::placeholder {
   font-size: small;
-  color: grey;
+  color: black;
 }
 
 .the-form [type="_email"]:hover,
 .the-form [type="password"]:hover {
-  background: #ffff;
+  background-color: #2a9df4;
 }
 
 .the-form [type="_email"]:focus,

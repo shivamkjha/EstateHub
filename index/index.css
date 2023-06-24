@@ -4,7 +4,6 @@ body {
     font-weight: 520;
     text-rendering: optimizespeed;
     font-family: FreeSans,Arimo,"Droid Sans",Helvetica,Arial,sans-serif;
-    /* padding: 20px; */
     height: 40px;
 }
 
@@ -44,9 +43,62 @@ body {
 .searchbar{
     display: flex ;
     padding: 0px 20px 0px 20px;
+    
 }
 
 .item {
+<<<<<<< HEAD
     padding-left: 10px;
     padding-right: 10px;
 }
+=======
+    padding-left: 20px;
+    padding-right: 20px;
+    
+}
+
+.button{
+    padding: 10px 1.25rem;
+    height: 1.5rem;
+    /* width: 15.5rem; */
+    border-radius: 4px;
+    background-color: transparent;
+    background-color: transparent;
+    border: 1px solid rgb(58, 54, 54);
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+section {
+    margin-bottom: 20px;
+}   
+.input{
+    padding: 10px 1.25rem;
+    height: 1.25rem;
+    width: 15.5rem;
+ }
+ .button-container {
+    display: flex;
+    align-items: center;
+    margin-left: 1rem; /* Add margin-left for spacing */
+}
+.button:hover {
+    background-color: rgb(112, 140, 182); /* Change the background color on hover */
+}
+.input-container {
+    position: relative;
+}
+.search-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    width: 16px;
+    height: 16px;
+    background-image: url('https://img.uxwing.com/wp-content/themes/uxwing/download/user-interface/search-icon.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+>>>>>>> 14d95e6e81b85bd3b27893cf14993fe8e4354ebe
