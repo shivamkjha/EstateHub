@@ -47,11 +47,6 @@ body {
 }
 
 .item {
-<<<<<<< HEAD
-    padding-left: 10px;
-    padding-right: 10px;
-}
-=======
     padding-left: 20px;
     padding-right: 20px;
     
@@ -101,4 +96,3 @@ section {
     background-repeat: no-repeat;
     background-size: cover;
 }
->>>>>>> 14d95e6e81b85bd3b27893cf14993fe8e4354ebe
