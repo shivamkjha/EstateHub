@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EstateHub</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
@@ -23,25 +24,28 @@
             <div class="navbar-right">
                 <div class="items">list rental</div>
                 <div class="items">about</div>
-                <div class="items"><a href="login-page/lpage.html">sign in</a></div>
+                <div class="items"><a href="../lpage.html">sign in</a></div>
             </div>
         </div>
     </section>
+    
     <section>
         <div class="searchbar">
             <div class="item">
-                <div class="input-container">
-            <input class ="input" type="text" id="__c11n_rvv4r6k" placeholder="City, Neighborhood, ZIP, Address" 
-            aria-autocomplete="list" autocomplete="off" role="combobox" 
-            aria-expanded="false" value="" ><span class="search-icon"></span>
-        </div>
-        </div>
+                <div class="search-container">
+                    <input class="input" type="text" id="__c11n_rvv4r6k" placeholder="City, Neighborhood, ZIP, Address" 
+                      aria-autocomplete="list" autocomplete="off" role="combobox" 
+                      aria-expanded="false" value="" >
+                    <label class="search-icon" for="__c11n_rvv4r6k"><i class="fas fa-search"></i></label>
+                </div>                  
+            </div>
+
             <div class="button-container">
-            <div class="item"><button class="button">for sell</button></div>
-            <div class="item"><button class="button">price</button></div>
-            <div class="item"><button class="button">more</button></div>
-            <div class="item"><button class="button">save search</button></div>
-        </div>
+                <div class="item"><button class="button">for sell</button></div>
+                <div class="item"><button class="button">price</button></div>
+                <div class="item"><button class="button">more</button></div>
+                <div class="item"><button class="button">save search</button></div>
+            </div>
         </div>
         
     </section>

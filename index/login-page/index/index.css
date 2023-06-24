@@ -46,6 +46,33 @@ body {
     
 }
 
+.search-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .input {
+    padding-right: 30px; /* Adjust the padding to accommodate the icon */
+  }
+  
+  .input:focus {
+    outline: none;
+  }
+  
+  .search-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    color: #2a9df4; /* Adjust the color as needed */
+    pointer-events: none;
+  }
+  
+  .search-icon i {
+    margin: 0;
+  }
+  
+
 .item {
     padding-left: 20px;
     padding-right: 20px;

@@ -43,6 +43,13 @@ function submit() {
                 .then(() => {
                     console.log('User data saved successfully');
                     // You can redirect the user to another page here
+                    showPopup();
+
+                    // Redirect after a delay (e.g., 3 seconds)
+                    setTimeout(() => {
+                        window.location.href = 'lpage.html';
+                    }, 3000);
+                    // window.location.href='lpage.html';
                 })
                 .catch((error) => {
                     console.error('Error saving user data:', error);
@@ -64,3 +71,13 @@ function validate_email(email) {
 function validate_password(password) {
     return password.length >= 8;
 }
+
+function showPopup() {
+    const popup = document.getElementById('popup');
+    popup.style.display = 'block';
+  
+    // Hide the popup after a delay (e.g., 3 seconds)
+    setTimeout(() => {
+      popup.style.display = 'none';
+    }, 3000);
+  }
