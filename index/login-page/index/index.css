@@ -178,7 +178,7 @@ section {
     padding: 10px 20px 10px 20px;
   }
   
-  .buy-item, .rent-item, .sell-item {
+  .buy-item, .rent-item, .sell-item , .sells-item , .about-item{
     background-size: 100% 80vh;
     overflow: hidden;
     background-repeat: no-repeat;
@@ -197,4 +197,10 @@ section {
 
   .sell-item {
     background-image: url('asset/OIP3.jpg');
+  }
+  .sells-item {
+    background-image: url('asset/OIP4.jpg');
+  }
+  .about-item {
+    background-image: url('asset/ph.jpeg');
   }
