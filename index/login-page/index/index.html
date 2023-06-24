@@ -9,53 +9,41 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <section>
-        <div class="navbar">
-            <div class="navbar-left">
-                <div class="items">buy</div>
-                <div class="items">rent</div>
-                <div class="items">sell</div>
-            </div>
+    <div class="navbar">
+        <div class="navbar-left">
+            <div class="items" data-target="#buy-item">buy</div>
+            <div class="items" data-target="#rent-item">rent</div>
+            <div class="items" data-target="#sell-item">sell</div>
+        </div>
 
-            <div class="navbar-logo">
-                <img class="logo" src="asset/R.png" alt="">
-            </div>
+        <div class="navbar-logo">
+            <img class="logo" src="asset/R.png" alt="">
+        </div>
 
-            <div class="navbar-right">
-                <div class="items">list rental</div>
-                <div class="items">about</div>
-                <div class="user-dropdown">
-                  <button class="user-icon"><i class="fas fa-user"></i></button>
-                  <div class="dropdown-content">
-                    <a href="#">User Profile</a>
-                    <a href="#">Feedback</a>
-                    <a href="../lpage.html">Log Out</a>
-                  </div>
-                </div>
+        <div class="navbar-right">
+            <div class="items">list rental</div>
+            <div class="items">about</div>
+            <div class="user-dropdown">
+              <button class="user-icon"><i class="fas fa-user"></i></button>
+              <div class="dropdown-content">
+                <a href="#">User Profile</a>
+                <a href="../feedback.html">Feedback</a>
+                <a href="../lpage.html">Log Out</a>
+              </div>
             </div>
         </div>
-    </section>
-    
-    <section>
-        <div class="searchbar">
-            <div class="item">
-                <div class="search-container">
-                    <input class="input" type="text" id="__c11n_rvv4r6k" placeholder="City, Neighborhood, ZIP, Address" 
-                      aria-autocomplete="list" autocomplete="off" role="combobox" 
-                      aria-expanded="false" value="" >
-                    <label class="search-icon" for="__c11n_rvv4r6k"><i class="fas fa-search"></i></label>
-                </div>                  
-            </div>
+    </div>
 
-            <div class="button-container">
-                <div class="item"><button class="button">for sell</button></div>
-                <div class="item"><button class="button">price</button></div>
-                <div class="item"><button class="button">more</button></div>
-                <div class="item"><button class="button">save search</button></div>
-            </div>
+    <div class="left">
+        <div class="buy-item" id="buy-item">
         </div>
-        
-    </section>
+        <div class="rent-item" id="rent-item">
+        </div>
 
+        <div class="sell-item" id="sell-item">
+        </div>
+    </div>
+
+    <script src="index.js"></script>
 </body>
 </html>

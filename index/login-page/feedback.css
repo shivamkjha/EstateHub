@@ -13,7 +13,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    padding: 20px;
+    /* padding: 20px; */
     overflow-x: hidden;
   }
   
@@ -101,6 +101,7 @@ body {
   
   button[type="submit"] {
     background-color: #007bff;
+    width: 100%;
     color: #fff;
     border: none;
     padding: 10px 20px;
