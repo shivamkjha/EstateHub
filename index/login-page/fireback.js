@@ -42,11 +42,11 @@ function submit() {
             userRef.set(user_data)
                 .then(() => {
                     console.log('User data saved successfully');
-                    // You can redirect the user to another page here
                 })
                 .catch((error) => {
                     console.error('Error saving user data:', error);
                 });
+                
         })
         .catch((error) => {
             const errorCode = error.code;
