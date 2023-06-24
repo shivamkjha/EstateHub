@@ -46,7 +46,7 @@ html {
 
 .logo {
     width: 3rem;
-    height: 3.315rem;
+    height: 3.15rem;
 }
 
 .searchbar{
@@ -178,7 +178,7 @@ section {
     padding: 10px 20px 10px 20px;
   }
   
-  .buy-item, .rent-item, .sell-item , .sells-item , .about-item{
+  .buy-item, .rent-item, .sell-item , .list-item , .logo-item{
     background-size: 100% 80vh;
     overflow: hidden;
     background-repeat: no-repeat;
@@ -198,9 +198,9 @@ section {
   .sell-item {
     background-image: url('asset/OIP3.jpg');
   }
-  .sells-item {
-    background-image: url('asset/OIP4.jpg');
+  .list-item {
+    background-image: url('asset/list.jpg');
   }
-  .about-item {
-    background-image: url('asset/ph.jpeg');
+  .logo-item {
+    background-image: url('asset/Sparkle.png');
   }
