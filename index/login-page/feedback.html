@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <title>EstateHub | Feedback</title>
     <link rel="stylesheet" href="feedback.css">
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;,">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
 </head>
 <body>
     <div class="feedback-container">
         <h1>Feedback</h1>
-        <form action="#" method="POST">
+        <form>
             <div class="form-group">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
@@ -36,8 +39,48 @@
                 <label for="feedback">Feedback:</label>
                 <textarea id="feedback" name="feedback"></textarea>
             </div>
-            <button type="submit">Submit</button>
+            <button type="submit" value="submit" class="submit" id="submit">Submit</button>
         </form>
     </div>
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-app.js";
+            import { getDatabase, ref, set, get, child } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-database.js";
+
+        // Initialize Firebase
+        const firebaseConfig = {
+                // Your Firebase config object here
+                apiKey: "AIzaSyBkoHClU8h1DlD4U1sFkbaxIM0N6Y2QH-A",
+                authDomain: "estatehub-fe927.firebaseapp.com",
+                projectId: "estatehub-fe927",
+                storageBucket: "estatehub-fe927.appspot.com",
+                messagingSenderId: "1042136791315",
+                appId: "1:1042136791315:web:9341ef3f0d8d0142aa82e6",
+                measurementId: "G-HX617RDKQN"
+};
+
+        const app = initializeApp(firebaseConfig);
+        const database = getDatabase(app);
+
+        document.getElementById("submit").addEventListener('click', function(e){
+            e.preventDefault();
+            set(ref(database, 'user/' + document.getElementById('name').value), {
+                name: document.getElementById('name').value,
+                email: document.getElementById('email').value,
+                rating : document.querySelector('input[name="rating"]:checked').value,
+                feedback : document.getElementById('feedback').value
+            })
+            .then(() => {
+                alert("Feedback Successfully Given!");
+                document.getElementById('name').value = '';
+                document.getElementById('email').value = '';
+                document.querySelector('input[name="rating"]:checked').checked = false;
+                document.getElementById('feedback').value = '';
+            })
+            .catch((error) => {
+                console.error('Error submitting feedback:', error);
+                alert('Failed to submit feedback. Please try again.');
+            });
+        });
+    </script>
 </body>
 </html>

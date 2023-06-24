@@ -47,6 +47,7 @@ function submit() {
                 .catch((error) => {
                     console.error('Error saving user data:', error);
                 });
+                
         })
         .catch((error) => {
             const errorCode = error.code;
