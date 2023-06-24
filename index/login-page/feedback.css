@@ -1,0 +1,116 @@
+/* Global styles */
+body {
+    margin: 0;
+    padding: 0;
+    color: #222222;
+    background-color: #2a9df4;
+    background-image: url("asset/cover.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    overflow-x: hidden;
+  }
+  
+  .feedback-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    outline: none; /* Remove default input outline */
+    background-color: #e9e9e9; /* Input background color */
+    color: #222222; /* Input text color */
+    border: 1px solid #ccc; /* Input border color */
+  }
+  
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  textarea:focus {
+    border-color: #999; /* Input border color on focus */
+  }
+  
+  input[type="radio"] {
+    display: none;
+  }
+  
+  label[for^="star"] {
+    font-size: 30px;
+    color: #ccc;
+    display: inline-block;
+    margin-right: 5px;
+    cursor: pointer;
+  }
+  
+  label[for^="star"]:hover,
+  label[for^="star"]:hover ~ label[for^="star"] {
+    color: #ffcc00;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  input[type="radio"]:checked ~ label {
+    color: #ffcc00;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .rating {
+    text-align: center;
+    direction: rtl; /* Add this line to change direction */
+  }
+  
+  .rating label {
+    direction: ltr; /* Add this line to change direction */
+  }
+  
+  textarea {
+    height: 100px; /* Adjust the height as desired */
+    resize: vertical; /* Allow vertical resizing */
+  }
+  
+  button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto; /* Center the button */
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #0069d9;
+  }
+  
