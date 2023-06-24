@@ -3,7 +3,7 @@
 
 
 ## Problem-
-In real estate industry many people face problem while finding House for rent, They dont get there desired localty or the Owner is sometime rude. 
+In the real estate industry, many individuals encounter difficulties when searching for a rental home. Some may struggle to find a property in their desired location, while others may have unpleasant experiences with landlords who exhibit rude behavior.
 
 
 ## Solution-
