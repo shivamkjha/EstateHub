@@ -9,12 +9,16 @@ body {
 
 .navbar {
     display: flex;
-    padding: 0px 20px 0px 20px;
+    padding: 0px 30px 0px 30px;
     justify-content: space-between;
     align-items: center;
     text-transform: capitalize;
     color: black;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-content:hover {
+    color: #2a9df4;
 }
 
 .navbar a {
@@ -101,17 +105,21 @@ section {
     height: 1.25rem;
     width: 15.5rem;
  }
+
  .button-container {
     display: flex;
     align-items: center;
     margin-left: 1rem; /* Add margin-left for spacing */
 }
+
 .button:hover {
     background-color: rgb(112, 140, 182); /* Change the background color on hover */
 }
+
 .input-container {
     position: relative;
 }
+
 .search-icon {
     position: absolute;
     top: 50%;
@@ -123,3 +131,40 @@ section {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.user-dropdown {
+    position: relative;
+  }
+  
+  .user-icon {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropdown-content {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    display: none;
+  }
+  
+  .dropdown-content a {
+    color: #333333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .user-dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
