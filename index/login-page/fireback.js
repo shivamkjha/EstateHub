@@ -41,7 +41,7 @@ function submit() {
   
             userRef.set(user_data)
                 .then(() => {
-                    console.log('User data saved successfully');
+                    alert('User data saved successfully');
                     // You can redirect the user to another page here
                 })
                 .catch((error) => {
