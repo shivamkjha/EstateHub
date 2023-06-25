@@ -100,7 +100,8 @@ body {
     width: 100%;
   }
   
-  .button button[type="submit"] {
+  .button button[type="submit"],
+  button[type="loginButton"]{
     background-color: #2a9df4;
     border: none;
     padding: 15px 30px;
@@ -109,9 +110,12 @@ body {
     cursor: pointer;
     color: #0e090e;
     transition: opacity 0.3s;
+    margin-bottom: 10px;
   }
   
-  .button button[type="submit"]:hover {
+  .button button[type="submit"]:hover,
+  button[type="loginButton"]:hover
+  {
     opacity: 0.9;
   }
   
