@@ -28,7 +28,7 @@ function submit() {
         return;
     }
   
-    auth.createUserWithEmailAndPassword(email, password)
+    auth.createUserWithEmailAndPassword(name,email, password)
         .then((userCredential) => {
             const user = userCredential.user;
             const userRef = database.ref('users/' + user.uid);
@@ -77,8 +77,9 @@ function submit() {
                     console.error('Error saving user data:', error);
                 });
                 console.log(user);
+                name.textContent = user.name;
                 email.textContent = user.email;
-                name.textContent = user.emailVerified;
+                // name.textContent = user.emailVerified;
                 
         })
         .catch((error) => {
