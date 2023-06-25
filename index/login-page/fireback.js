@@ -28,7 +28,7 @@ function submit() {
         return;
     }
   
-    auth.createUserWithEmailAndPassword(name,email, password)
+    auth.createUserWithEmailAndPassword(email, password)
         .then((userCredential) => {
             const user = userCredential.user;
             const userRef = database.ref('users/' + user.uid);

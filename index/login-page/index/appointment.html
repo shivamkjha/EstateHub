@@ -28,10 +28,16 @@
         <label for="message">Message:</label>
         <textarea id="message" name="message" rows="4"></textarea>
       </div>
-      <button type="submit">Submit</button>
+      <button type="submit" onclick="printpage()">Submit</button>
     </form>
   </div>
-
+  <script>
+    function printpage() {
+    window.print();
+}
+  </script>
   <script src="appointment.js"></script>
+
+
 </body>
 </html>
