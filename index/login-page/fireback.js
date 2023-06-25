@@ -18,7 +18,6 @@ function submit() {
     const email = document.getElementById('new_email').value;
     const password = document.getElementById('new_password').value;
     const repass = document.getElementById('re_enter_password').value;
-  
     if (!validate_email(email) || !validate_password(password)) {
         alert('Invalid email or password');
         return;
@@ -46,10 +45,40 @@ function submit() {
                 .then(() => {
                     alert('User data saved successfully');
                     // You can redirect the user to another page here
-                })
+                    user.sendEmailVerification()
+            .then(() => {
+              alert('Email verification sent. Please check your email.');
+
+              // Listen for changes in user's email verification status
+              const userListener = setInterval(() => {
+                user.reload()
+                  .then(() => {
+                    if (user.emailVerified) {
+                      // Email is verified, enable the login button
+                      clearInterval(userListener);
+                      document.getElementById('loginButton').disabled = false;
+                      alert('Email is verified. You can now move to the login page.');
+                    } else {
+                      // Email is not verified, show a message or take appropriate action
+                      console.log('Email is not verified yet');
+                    }
+                  })
+                  .catch((error) => {
+                    console.error('Error reloading user:', error);
+                  });
+              }, 3000); s
+                    // You can redirect the user to another page here
+                    })
+                    .catch((error) => {
+                    console.error('Error sending email verification:', error);
+                    });
+                        })
                 .catch((error) => {
                     console.error('Error saving user data:', error);
                 });
+                console.log(user);
+                email.textContent = user.email;
+                name.textContent = user.emailVerified;
                 
         })
         .catch((error) => {
@@ -68,3 +97,6 @@ function validate_email(email) {
 function validate_password(password) {
     return password.length >= 8;
 }
+function handleLoginButton() {
+    window.location.href = 'lpage.html';
+  }
