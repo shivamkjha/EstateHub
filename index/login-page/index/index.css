@@ -337,21 +337,14 @@ section {
     align-items: flex-end;
   }
   
-  /* .left-button {
-    position: absolute;
-    top: 50%;
-    left: 10px;
-    transform: translateY(-50%);
-    box-sizing: border-box;
+
+  .left-button, .right-button a {
+    text-decoration: none;
   }
-  
-  .right-button {
-    position: absolute;
-    top: 50%;
-    right: 10px;
-    transform: translateY(-50%);
-    box-sizing: border-box;
-  } */
+
+  .left-button, .right-button:visited {
+    text-decoration: none;
+  }
   
   
   
