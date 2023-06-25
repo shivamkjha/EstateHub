@@ -66,4 +66,13 @@ body {
   button:hover {
     opacity: .9;
   }
-  
+
+  @media print {
+    body * {
+      visibility: hidden;
+    }
+    
+    .print-content {
+      visibility: visible;
+    }
+  }  
