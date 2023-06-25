@@ -37,24 +37,4 @@ const houseDetails = [
     price.textContent = house.price;
   });
 
-  function addToWishlist(name, address, price) {
-    const house = { name, address, price };
-  
-    // Get existing wishlist or create a new one
-    let wishlist = JSON.parse(localStorage.getItem('wishlist')) || [];
-  
-    // Check if the house is already in the wishlist
-    const isHouseInWishlist = wishlist.some(item => item.name === house.name);
-  
-    if (!isHouseInWishlist) {
-      // Add the house to the wishlist
-      wishlist.push(house);
-  
-      // Store the updated wishlist in localStorage
-      localStorage.setItem('wishlist', JSON.stringify(wishlist));
-    }
-  
-    // Redirect to the wishlist page
-    window.location.href = 'wishlist.html';
-  }
   
