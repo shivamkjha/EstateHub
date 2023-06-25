@@ -46,7 +46,7 @@ html {
 
 .logo {
     width: 3rem;
-    height: 3.315rem;
+    height: 3.15rem;
 }
 
 .searchbar{
@@ -179,10 +179,9 @@ section {
     align-items: center;
     justify-content: center;
     text-align: center;
-    /* height: 80vh; */
   }
   
-  .buy-item, .rent-item, .sell-item {
+  .buy-item, .rent-item, .sell-item , .list-item , .logo-item{
     background-size: 100% 80vh;
     overflow: hidden;
     background-repeat: no-repeat;
@@ -205,28 +204,17 @@ section {
     background-image: url('asset/OIP3.jpg');
   }
 
-  .buy-item:hover, .rent-item:hover, .sell-item:hover {
+  .list-item {
+    background-image: url('asset/list.jpg');
+  }
+
+  .logo-item {
+    background-image: url('asset/txt.jpg');
+  }
+
+  .buy-item:hover, .rent-item:hover, .sell-item:hover, .list-item:hover {
     opacity: 1;
   }
-
-  /* .left {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    height: 80vh;
-  }
-
-  .buy-item, .rent-item, .sell-item {
-    background-image: url('asset/background.jpg');
-    background-size: cover;
-    background-position: center;
-    color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    margin-bottom: 20px;
-  } */
 
   h2 {
     font-size: 36px;
@@ -272,3 +260,99 @@ section {
   button:hover {
     background-color: rgba(0, 0, 0, 0.2);
   }
+
+  footer {
+    text-align: center;
+  }
+
+  .footer-connect {
+    padding: 2px;
+  }
+  
+  .footer-connect h3 {
+    font-size: 15px;
+  }
+  
+  .social-media a {
+    display: inline-block;
+    margin: 0 5px;
+    color: #333;
+    font-size: 18px;
+  }
+  
+  .social-media a:hover {
+    color: #2a9df4;
+  }
+  
+  .social-media i {
+    vertical-align: middle;
+  }
+  
+  .footer-connect p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #666;
+  }
+
+  .buy-item {
+    color: #fff;
+    overflow: hidden;
+    text-align: left;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+  }
+  
+  .rent-item {
+    color: beige;
+    overflow: hidden;
+    text-align: right;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+  
+  .sell-item {
+    color: #add8e6;
+    overflow: hidden;
+    text-align: left;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+  }
+  
+  .list-item {
+    color: #fff;
+    overflow: hidden;
+    text-align: right;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+  
+  /* .left-button {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    box-sizing: border-box;
+  }
+  
+  .right-button {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    box-sizing: border-box;
+  } */
+  
+  
+  

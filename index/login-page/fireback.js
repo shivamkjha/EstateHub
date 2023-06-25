@@ -13,6 +13,8 @@ const auth = firebase.auth();
 const database = firebase.database();
 
 function submit() {
+    
+    const name = document.getElementById('name').value;
     const email = document.getElementById('new_email').value;
     const password = document.getElementById('new_password').value;
     const repass = document.getElementById('re_enter_password').value;
@@ -33,6 +35,7 @@ function submit() {
             const userRef = database.ref('users/' + user.uid);
   
             const user_data = {
+                name: name,
                 email: email,
                 password: password,
                 repass: repass,
